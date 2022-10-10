@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/">
+          <Route exact path="/">
             <Route
               index
               element={
