@@ -54,7 +54,7 @@ function Register() {
       onAuthStateChanged(auth, (user) => {
         console.log(user);
       });
-      navigate("/");
+      navigate("/Mulligan/login");
     } catch (error) {
       console.error(error);
     }
