@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path="/">
+          <Route exact path="/Mulligan">
             <Route
               index
               element={
