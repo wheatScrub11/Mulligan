@@ -18,7 +18,7 @@ function Login() {
     };
     try {
       await signInUser(data);
-      navigate("/Mulligan/register");
+      navigate("/Mulligan");
     } catch (error) {
       setError(true)
       console.log(error);
