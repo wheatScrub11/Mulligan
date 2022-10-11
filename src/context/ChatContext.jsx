@@ -6,10 +6,6 @@ export const ChatContextProvider = ({ children }) => {
   const [chatId, setChatId] = useState(null);
   const [chatFriend, setChatFriend] = useState(null);
 
-  useEffect(() =>{
-    console.log(chatId);
-  }, [chatId])
-
   return (
     <ChatContext.Provider
       value={{ chatId, setChatId, chatFriend, setChatFriend }}

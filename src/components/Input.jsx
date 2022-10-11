@@ -35,7 +35,6 @@ function Input() {
     const friendChats = await (
       await getDoc(doc(db, "usersChats", chatFriend.uid))
     ).data().friends;
-    console.log(friendChats);
 
     const currentUserChatsUpdated = currentUserChats.map((chat) => {
       if (chat.uid == chatFriend.uid) {

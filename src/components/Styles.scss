@@ -345,7 +345,10 @@ $ultra-lighter-purple: #8175a5;
                 flex-direction: column;
                 gap: 15px;
                 max-width: 30%;
-                word-break: break-all;
+                word-break: break-word;
+                word-wrap: break-word;
+                -ms-word-break: break-word;
+                line-break: strict;
 
 
                 .message-file{

@@ -63,7 +63,6 @@ function Search() {
         ? (id = currentUser.uid + userToFriend.uid)
         : (id = userToFriend.uid + currentUser.uid);
       
-        console.log(id)
         return id
     };
 
