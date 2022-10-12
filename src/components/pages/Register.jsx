@@ -54,7 +54,7 @@ function Register() {
       onAuthStateChanged(auth, (user) => {
         console.log(user);
       });
-      navigate("/Mulligan");
+      navigate("/");
     } catch (error) {
       console.error(error);
     }
@@ -121,7 +121,7 @@ function Register() {
         </label>
         <input type="submit" id="Sign-up" style={{ display: "none" }} />
         <p>
-          Already have an account? <Link to={"/Mulligan/login"}>Login Here</Link>{" "}
+          Already have an account? <Link to={"/login"}>Login Here</Link>{" "}
         </p>
       </form>
     </div>

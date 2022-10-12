@@ -18,7 +18,7 @@ function Login() {
     };
     try {
       await signInUser(data);
-      navigate("/Mulligan");
+      navigate("/");
     } catch (error) {
       setError(true)
       console.log(error);
@@ -50,7 +50,7 @@ function Login() {
         <input type="submit" id="log-in" style={{ display: "none" }} />
         {error && <p style={{color: "red", textAlign: "center"}}>Email or password incorrect</p>}
         <p>
-          Dont have an account yet? <Link to={"/Mulligan/register"}>Register Here</Link>{" "}
+          Dont have an account yet? <Link to={"/register"}>Register Here</Link>{" "}
         </p>
       </form>
     </div>

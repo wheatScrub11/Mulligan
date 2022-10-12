@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
+import { Route, Routes, HashRouter, Navigate } from "react-router-dom";
 import Home from "./components/pages/Home";
 import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
@@ -10,7 +10,7 @@ function App() {
 
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {
-      return <Navigate to="/Mulligan/login"/>;
+      return <Navigate to="login"/>;
     }else{
      return children
     }
@@ -18,9 +18,9 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-          <Route exact path="/Mulligan">
+          <Route exact path="/">
             <Route
               index
               element={
@@ -33,7 +33,7 @@ function App() {
             <Route path="register" element={<Register />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
